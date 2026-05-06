@@ -4,20 +4,16 @@ name: "张驰"
 avatar: ""
 email: "chi.zhang@ia.ac.cn"
 telephone: "156-5276-9331"
-description: "副研究员 · 中国科学院自动化研究所"
+description: "上海人工智能实验室"
 url: "https://ZhangChi519.github.io"
 repository: "ZhangChi519/ZhangChi519.github.io"
 github_username: ZhangChi519
 
 # Position
-position: "副研究员"
+position: "研究员"
 affiliations:
-  - name: 中国科学院自动化研究所
-    url: https://www.ia.cas.cn/
-  - name: 多模态智能系统全国重点实验室 (MAIS)
-    url: https://www.ia.cas.cn/
-  - name: 中国科学院香港创新研究院
-    url: https://www.hkair-cas.ac.cn/
+  - name: 上海人工智能实验室
+    url: https://www.shlab.org.cn/
 
 # Social
 twitter: false

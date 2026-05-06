@@ -217,6 +217,145 @@ pre code {
   padding: 0;
 }
 
+/* Homepage Header */
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.header-info {
+  text-align: center;
+}
+
+.site-affiliation {
+  font-size: 1.1em;
+  opacity: 0.85;
+  margin-top: 5px;
+}
+
+/* Homepage Sections */
+.section {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.section-title {
+  font-size: 1.4em;
+  color: #2c3e50;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+  margin-top: 0;
+}
+
+.section-content p {
+  margin-bottom: 1em;
+}
+
+.section-content > ul, .section-content > ol {
+  margin: 1em 0;
+}
+
+/* Paper List */
+.paper-list {
+  list-style: none;
+  padding: 0;
+}
+
+.paper-list li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.paper-list li:last-child {
+  border-bottom: none;
+}
+
+.venue-tag {
+  display: inline-block;
+  background: #e8f4fc;
+  color: #2980b9;
+  padding: 2px 8px;
+  border-radius: 3px;
+  font-size: 0.85em;
+  margin-left: 5px;
+}
+
+/* Project List */
+.project-list {
+  list-style: none;
+  padding: 0;
+}
+
+.project-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.project-list li:last-child {
+  border-bottom: none;
+}
+
+/* Award List */
+.award-list {
+  list-style: none;
+  padding: 0;
+}
+
+.award-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.award-list li:last-child {
+  border-bottom: none;
+}
+
+/* News List */
+.news-list {
+  list-style: none;
+  padding: 0;
+}
+
+.news-list li {
+  padding: 8px 0;
+}
+
+/* Student Table */
+.student-table {
+  margin-top: 15px;
+}
+
+.student-table th {
+  background: #f8f9fa;
+}
+
+/* More Link */
+.more-link {
+  display: inline-block;
+  margin-top: 10px;
+  color: #3498db;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #f8f9fa;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  padding: 5px 0;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .navbar-menu {
@@ -229,5 +368,14 @@ pre code {
 
   .page, .post {
     padding: 20px;
+  }
+
+  .section {
+    padding: 20px;
+  }
+
+  .header-content {
+    flex-direction: column;
+    gap: 20px;
   }
 }
