@@ -1,75 +1,66 @@
+---
+layout: default
+title: 首页
+---
+
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>张驰 - 个人主页</title>
-    <style>
-        *{margin:0;padding:0;box-sizing:border-box;}
-        body{
-            font-family: "Microsoft Yahei", Arial, sans-serif;
-            line-height: 1.8;
-            color: #333;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 0 20px;
-            background-color: #f8f9fa;
-        }
-        h1{
-            font-size: 28px;
-            margin-bottom: 10px;
-            color: #222;
-        }
-        .info{
-            margin-bottom: 30px;
-            color: #555;
-        }
-        h2{
-            font-size: 20px;
-            margin: 35px 0 15px;
-            border-left: 4px solid #2c7be5;
-            padding-left: 12px;
-        }
-        p{margin-bottom: 12px;}
-        ul{padding-left: 20px;margin-bottom: 15px;}
-        a{color: #2c7be5;text-decoration: none;}
-        a:hover{text-decoration: underline;}
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>张驰 - 中国科学院自动化研究所</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 </head>
 <body>
-
-    <h1>张驰 Chi Zhang</h1>
-    <div class="info">
-        <p>科研人员 | 研究方向：人工智能、大模型、AI Agent</p>
-        <p>邮箱：xxx@example.com</p>
-        <p>GitHub：<a href="https://github.com/ZhangChi519" target="_blank">github.com/ZhangChi519</a></p>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="site-title">张驰</h1>
+      <p class="site-description">副研究员 · 中国科学院自动化研究所</p>
+      <p class="site-affiliation">多模态智能系统全国重点实验室 (MAIS) · 中国科学院香港创新研究院</p>
     </div>
+  </header>
 
-    <h2>个人简介</h2>
-    <p>这里填写你的个人简介：目前任职于XX实验室/研究所，主要从事大语言模型、多模态智能、AI Agent 相关研究，专注于通用人工智能基础理论与工程落地。</p>
+  <main class="main-content">
+    <div class="container">
+      <section class="intro-section">
+        <h2>个人简介</h2>
+        <p>
+          张驰，博士，目前担任中国科学院自动化研究所多模态智能系统全国重点实验室副研究员；中国科学院香港创新研究院人工智能与机器人创新中心副研究员。
+        </p>
+        <p>
+          主要研究方向包括<strong>计算机视觉</strong>、<strong>计算成像</strong>、<strong>多模态信息处理</strong>等。主持国家自然科学基金2项（青年项目、面上项目），"新一代人工智能"重大项目子课题1项，作为实际负责人承担包括国家自然科学基金重点项目在内的科研项目多项，完成项目额超过2000万元。
+        </p>
+        <p>
+          以第一作者和通信作者在国内外权威期刊（TIP/PR/中国科学信息科学等）发表论文10余篇，11项国家发明专利获得授权。曾荣获北京市科技进步一等奖，中国创新挑战赛优胜奖等。
+        </p>
+      </section>
 
-    <h2>研究方向</h2>
-    <ul>
-        <li>大语言模型与对齐</li>
-        <li>多模态感知与推理</li>
-        <li>AI Agent 与自主任务规划</li>
-        <li>科研数据智能处理</li>
-    </ul>
+      <section class="news-section">
+        <h2>最新动态</h2>
+        <ul>
+          <li><strong>2024.05</strong> 新论文"MA-ST3D"被 IEEE T-IP (CCF-A) 接收</li>
+          <li><strong>2023.08</strong> 获"无人争锋"无人系统竞赛亚军</li>
+          <li><strong>2022.12</strong> 获北京市科技进步一等奖</li>
+          <li><strong>2019.06</strong> CVPR nuScenes 3D Detection Challenge 季军</li>
+        </ul>
+      </section>
 
-    <h2>教育经历</h2>
-    <ul>
-        <li>20XX–20XX  XX大学  计算机科学  硕士/博士</li>
-        <li>20XX–20XX  XX大学  本科</li>
-    </ul>
+      <section class="contact-section">
+        <h2>联系方式</h2>
+        <ul>
+          <li>邮箱：chi.zhang@ia.ac.cn</li>
+          <li>电话：156-5276-9331</li>
+          <li>GitHub：<a href="https://github.com/ZhangChi519">github.com/ZhangChi519</a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
 
-    <h2>发表论文</h2>
-    <ul>
-        <li>论文标题1，会议/期刊，2026</li>
-        <li>论文标题2，会议/期刊，2025</li>
-    </ul>
-
-    <h2>兴趣与爱好</h2>
-    <p>阅读、科研探索、技术分享、户外运动。</p>
-
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2024 张驰. All rights reserved.</p>
+      <p>中国科学院自动化研究所</p>
+    </div>
+  </footer>
 </body>
 </html>

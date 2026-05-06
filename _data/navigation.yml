@@ -1,0 +1,13 @@
+navigation:
+  - name: 关于我
+    url: about/
+  - name: 发表论文
+    url: publications/
+  - name: 项目
+    url: projects/
+  - name: 荣誉奖励
+    url: awards/
+  - name: 学生培养
+    url: students/
+  - name: 最新动态
+    url: news/

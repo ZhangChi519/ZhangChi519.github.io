@@ -1,0 +1,122 @@
+# Site Settings
+title: "张驰"
+name: "张驰"
+avatar: ""
+email: "chi.zhang@ia.ac.cn"
+telephone: "156-5276-9331"
+description: "副研究员 · 中国科学院自动化研究所"
+url: "https://ZhangChi519.github.io"
+repository: "ZhangChi519/ZhangChi519.github.io"
+github_username: ZhangChi519
+
+# Position
+position: "副研究员"
+affiliations:
+  - name: 中国科学院自动化研究所
+    url: https://www.ia.cas.cn/
+  - name: 多模态智能系统全国重点实验室 (MAIS)
+    url: https://www.ia.cas.cn/
+  - name: 中国科学院香港创新研究院
+    url: https://www.hkair-cas.ac.cn/
+
+# Social
+twitter: false
+scholar:
+  user: ""
+googlescholar: ""
+github: ZhangChi519
+linkedin: false
+orcid: false
+researchgate: false
+Mendeley: false
+
+# Site Settings
+timezone: Asia/Shanghai
+lang: zh-CN
+encoding: utf-8
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:name/
+  portfolio:
+    output: true
+    permalink: /projects/:name/
+  talks:
+    output: true
+    permalink: /talks/:name/
+  teaching:
+    output: true
+    permalink: /teaching/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: single
+      author: 张驰
+  - scope:
+      type: publications
+    values:
+      layout: single
+      author: 张驰
+  - scope:
+      type: portfolio
+    values:
+      layout: single
+      author: 张驰
+  - scope:
+      type: talks
+    values:
+      layout: single
+      author: 张驰
+  - scope:
+      type: teaching
+    values:
+      layout: single
+      author: 张驰
+
+# Jekyll settings
+markdown: kramdown
+highlighter: rouge
+permalink: /:categories/:name/
+paginate: 10
+paginate_path: /news/page/:num/
+use_mathjax: false
+mermaid: false
+
+# Build settings
+sass:
+  sass_dir: _sass
+  style: compressed
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jemoji
+
+# Exclude from processing
+exclude:
+  - README.md
+  - LICENSE.md
+  - Gemfile
+  - Gemfile.lock
+  - docker-compose.yml
+  - Dockerfile
+  - .devcontainer
+  - .github
+  - scripts
+  - markdown_generator
+  - talkmap.ipynb
+  - talkmap.py
+  - talkmap_out.ipynb
+  - vendor
+
+# Markdown processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
