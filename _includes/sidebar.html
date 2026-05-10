@@ -1,0 +1,40 @@
+<aside class="sidebar">
+  <div class="sidebar-header">
+    {% if site.avatar %}
+    <div class="avatar-container">
+      <a href="{{ '/' | relative_url }}"><img src="{{ site.avatar | relative_url }}" alt="{{ site.name }}" class="avatar"></a>
+    </div>
+    {% endif %}
+    <h1 class="sidebar-name">{{ site.name }}</h1>
+    <p class="sidebar-title">{{ site.position }}</p>
+  </div>
+
+  <div class="sidebar-affiliation">
+    {% if site.affiliations %}
+      {% for aff in site.affiliations %}
+        <a href="{{ aff.url }}" target="_blank">{{ aff.name }}</a>
+      {% endfor %}
+    {% endif %}
+  </div>
+
+  <nav class="sidebar-nav">
+    <ul>
+      {% for item in site.data.navigation.navigation %}
+      <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <div class="sidebar-contact">
+    {% if site.email %}
+    <p><i class="icon-email"></i> {{ site.email }}</p>
+    {% endif %}
+    {% if site.github_username %}
+    <p><i class="icon-github"></i> <a href="https://github.com/{{ site.github_username }}" target="_blank">GitHub</a></p>
+    {% endif %}
+  </div>
+
+  <div class="sidebar-footer">
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</p>
+  </div>
+</aside>

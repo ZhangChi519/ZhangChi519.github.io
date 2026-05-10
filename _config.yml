@@ -1,8 +1,8 @@
 # Site Settings
 title: "张驰"
 name: "张驰"
-avatar: ""
-email: "chi.zhang@ia.ac.cn"
+avatar: "/images/zhangchi.jpg"
+email: "zhangchi2@pjlab.org.cn"
 telephone: "156-5276-9331"
 description: "上海人工智能实验室"
 url: "https://ZhangChi519.github.io"
@@ -10,7 +10,7 @@ repository: "ZhangChi519/ZhangChi519.github.io"
 github_username: ZhangChi519
 
 # Position
-position: "研究员"
+position: "博士"
 affiliations:
   - name: 上海人工智能实验室
     url: https://www.shlab.org.cn/
@@ -45,6 +45,8 @@ collections:
   teaching:
     output: true
     permalink: /teaching/:name/
+  pages:
+    output: true
 
 # Defaults
 defaults:
@@ -70,6 +72,11 @@ defaults:
       author: 张驰
   - scope:
       type: teaching
+    values:
+      layout: single
+      author: 张驰
+  - scope:
+      type: pages
     values:
       layout: single
       author: 张驰

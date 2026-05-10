@@ -3,7 +3,7 @@ navigation:
     url: about/
   - name: 发表论文
     url: publications/
-  - name: 项目
+  - name: 科研项目
     url: projects/
   - name: 荣誉奖励
     url: awards/
