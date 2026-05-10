@@ -1,6 +1,7 @@
 # Site Settings
 title: "张驰"
 name: "张驰"
+name_en: "Chi Zhang"
 avatar: "/images/zhangchi.jpg"
 email: "zhangchi2@pjlab.org.cn"
 telephone: "156-5276-9331"
@@ -11,8 +12,12 @@ github_username: ZhangChi519
 
 # Position
 position: "博士"
+position_en: "Ph.D."
 affiliations:
   - name: 上海人工智能实验室
+    url: https://www.shlab.org.cn/
+affiliations_en:
+  - name: Shanghai AI Laboratory
     url: https://www.shlab.org.cn/
 
 # Social

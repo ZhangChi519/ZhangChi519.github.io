@@ -6,9 +6,18 @@
 <body>
   <div class="wrapper">
     {% include sidebar.html %}
-    <main class="main-content">
-      {{ content }}
-    </main>
+    <div class="main-wrapper">
+      <div class="lang-toggle-top">
+        {% if page.lang == 'en' %}
+        <a href="{{ '/' | relative_url }}">中文</a> / <span class="lang-active">EN</span>
+        {% else %}
+        <span class="lang-active">中文</span> / <a href="{{ '/en/' | relative_url }}">EN</a>
+        {% endif %}
+      </div>
+      <main class="main-content">
+        {{ content }}
+      </main>
+    </div>
   </div>
 </body>
 </html>

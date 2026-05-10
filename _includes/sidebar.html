@@ -2,15 +2,19 @@
   <div class="sidebar-header">
     {% if site.avatar %}
     <div class="avatar-container">
-      <a href="{{ '/' | relative_url }}"><img src="{{ site.avatar | relative_url }}" alt="{{ site.name }}" class="avatar"></a>
+      <a href="{% if page.lang == 'en' %}{{ '/en/' | relative_url }}{% else %}{{ '/' | relative_url }}{% endif %}"><img src="{{ site.avatar | relative_url }}" alt="{{ site.name }}" class="avatar"></a>
     </div>
     {% endif %}
-    <h1 class="sidebar-name">{{ site.name }}</h1>
-    <p class="sidebar-title">{{ site.position }}</p>
+    <h1 class="sidebar-name">{% if page.lang == 'en' %}{{ site.name_en }}{% else %}{{ site.name }}{% endif %}</h1>
+    <p class="sidebar-title">{% if page.lang == 'en' %}{{ site.position_en }}{% else %}{{ site.position }}{% endif %}</p>
   </div>
 
   <div class="sidebar-affiliation">
-    {% if site.affiliations %}
+    {% if page.lang == 'en' %}
+      {% for aff in site.affiliations_en %}
+        <a href="{{ aff.url }}" target="_blank">{{ aff.name }}</a>
+      {% endfor %}
+    {% else %}
       {% for aff in site.affiliations %}
         <a href="{{ aff.url }}" target="_blank">{{ aff.name }}</a>
       {% endfor %}
@@ -19,9 +23,15 @@
 
   <nav class="sidebar-nav">
     <ul>
-      {% for item in site.data.navigation.navigation %}
-      <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
-      {% endfor %}
+      {% if page.lang == 'en' %}
+        {% for item in site.data.navigation_en.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      {% else %}
+        {% for item in site.data.navigation.navigation %}
+        <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+        {% endfor %}
+      {% endif %}
     </ul>
   </nav>
 
@@ -35,6 +45,6 @@
   </div>
 
   <div class="sidebar-footer">
-    <p>&copy; {{ site.time | date: '%Y' }} {{ site.name }}</p>
+    <p>&copy; {{ site.time | date: '%Y' }} {% if page.lang == 'en' %}{{ site.name_en }}{% else %}{{ site.name }}{% endif %}</p>
   </div>
 </aside>

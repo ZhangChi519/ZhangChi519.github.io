@@ -47,6 +47,11 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.lang-toggle-top .lang-active {
+  color: #3498db;
+  font-weight: 600;
+}
+
 .avatar-container {
   margin-bottom: 15px;
 }
@@ -134,11 +139,33 @@ a:hover {
   text-align: center;
 }
 
-.main-content {
+.main-wrapper {
   margin-left: 280px;
   flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lang-toggle-top {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 0.9em;
+}
+
+.lang-toggle-top a {
+  color: #555;
+  transition: color 0.2s;
+}
+
+.lang-toggle-top a:hover {
+  color: #3498db;
+}
+
+.main-content {
+  flex-grow: 1;
   padding: 40px 50px;
-  max-width: calc(100% - 280px);
   background-color: #f5f5f5;
 }
 
