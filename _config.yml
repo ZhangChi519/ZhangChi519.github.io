@@ -8,7 +8,7 @@ telephone: "156-5276-9331"
 description: "上海人工智能实验室"
 url: "https://ZhangChi519.github.io"
 repository: "ZhangChi519/ZhangChi519.github.io"
-github_username: ZhangChi519
+google_scholar_url: "https://scholar.google.com/citations?user=bLL6dhwAAAAJ&hl=zh-CN"
 
 # Position
 position: "博士"
@@ -23,9 +23,9 @@ affiliations_en:
 # Social
 twitter: false
 scholar:
-  user: ""
-googlescholar: ""
-github: ZhangChi519
+  user: "bLL6dhwAAAAJ"
+googlescholar: "https://scholar.google.com/citations?user=bLL6dhwAAAAJ&hl=zh-CN"
+github: false
 linkedin: false
 orcid: false
 researchgate: false

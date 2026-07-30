@@ -62,3 +62,4 @@ CVPR, ICCV, ECCV, IJCAI, AAAI, ICB, PRCV, etc.
 ## Contact
 
 - Email: zhangchi2@pjlab.org.cn
+- Google Scholar: [Profile]({{ site.google_scholar_url }})

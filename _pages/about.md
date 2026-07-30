@@ -64,4 +64,5 @@ CVPR、ICCV、ECCV、IJCAI、AAAI、ICB、PRCV等
 ## 联系方式
 
 - 邮箱：zhangchi2@pjlab.org.cn
+- 谷歌学术：[个人主页]({{ site.google_scholar_url }})
 
